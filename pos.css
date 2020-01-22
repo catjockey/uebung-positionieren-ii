@@ -28,12 +28,13 @@ section{
 	max-width: 600px;
 	margin: auto;
 	outline: 1px solid blue;
-
+position: relative;
 }
 
 .row{
 	width: 100%;
 	height: 600px;
+	
 
 
 }
@@ -45,19 +46,36 @@ section{
 
 .electric-purple{
 	background: #C200FB;
-
+position: absolute;
+top: 100px;
+right: 100px;
+z-index: 1;
 }
-
+/* zindex hat was mit der ebene der Achse zu tun. wo liegt das element  */
 .raspberry{
 	background: #EC0868;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2;
 	}
 
 .ferrari-red{
 	background: #FC2F00;
+	position: absolute;
+	bottom: 200px;
+	right: 200px;
+	z-index: 3;
+
+	
+	
 }
 
 .black{
 	background: #000;
+	position: fixed;
+	right: 0;;
+	bottom: 0;
 }
 
 .blabla{
